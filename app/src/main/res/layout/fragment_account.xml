@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:visibility="gone"
+        android:id="@+id/llProgressBar"
+        layout="@layout/please_wait" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:elevation="3dp"
+                app:cardCornerRadius="6dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+                <LinearLayout
+                    android:id="@+id/detailLayout"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro_bold"
+                        android:textSize="20sp"
+                        android:text="Username"
+                        android:padding="5dp"
+                        android:id="@+id/customerNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro_bold"
+                        android:textSize="16sp"
+                        android:text="Phone number"
+                        android:id="@+id/customerPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/maven_pro_regular"
+                        android:textSize="16sp"
+                        android:text="email@mescheveux"
+                        android:id="@+id/customerEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:drawableStart="@drawable/ic_mode_edit_yellow_900_18dp"
+                        android:id="@+id/editCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/formLayout"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:inputType="textPersonName"
+                        android:fontFamily="@font/maven_pro_regular"
+                        android:textSize="14sp"
+                        android:hint="Username"
+                        android:id="@+id/inputName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:inputType="phone"
+                        android:fontFamily="@font/maven_pro_regular"
+                        android:textSize="14sp"
+                        android:hint="Phone number"
+                        android:id="@+id/inputPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/maven_pro_regular"
+                        android:textSize="14sp"
+                        android:hint="email@mescheveux"
+                        android:id="@+id/inputEmail"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/saveCustomer"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:text="Save"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/maven_pro_bold"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+            <TextView
+                android:id="@+id/changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="Change Password" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+            <TextView
+                android:id="@+id/termsOfService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="Terms of Service" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+            <TextView
+                android:id="@+id/privacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:text="Privacy Policy"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="Website" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <TextView
+                android:id="@+id/helpPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="Help" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <TextView
+                android:id="@+id/Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:text="Logout"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <TextView
+                android:id="@+id/appVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:text="Version 1.0.0"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

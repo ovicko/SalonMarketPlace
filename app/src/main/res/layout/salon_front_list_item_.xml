@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/salonCardView"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:elevation="3dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/salonContainer"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/salon_image"
+            android:id="@+id/salonImageView"
+            android:layout_width="180dp"
+            android:scaleType="fitXY"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="150dp"
+            tools:srcCompat="@drawable/placholder_salon_image" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/salonNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:text="@string/placeholder_salon_name" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/salonAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:text="@string/placeholder_salon_name" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bookBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="1dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Book"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MES CHEVEUX</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_appointment">Bookings</string>
+    <string name="menu_my_salon">My Salon</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_settings">Settings</string>
+    <string name="help_txt_register">Sign Up for more</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="already_user_login">Login</string>
+    <string name="registerNow">Sign Up</string>
+    <string name="forgotten_your_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="salon_image">Salon Image</string>
+
+    <string name="network_failure">Network failure</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholder_salon_name">Beauty Plus Spar</string>
+    <string name="placeholder_salon_address">123 Street 405 NY</string>
+    <string name="swipe_right">Swipe right to Sign Up</string>
+    <string name="swipe_left_login">Swipe Left to Login</string>
+    <string name="placeholder_category_name">Editor</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="menu_nearby_salon">Nearby Salons</string>
+    <string name="menu_about">About</string>
+</resources>

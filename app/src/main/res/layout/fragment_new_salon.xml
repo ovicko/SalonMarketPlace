@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Add Salon"
+                android:textColor="#171717"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_salon_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Salon name"
+                    android:inputType="textShortMessage"
+                    android:maxLength="300"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Website"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:maxLength="500"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:background="#b9b9b9" />
+            <ImageView
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                android:id="@+id/salonImageView"
+                android:layout_margin="10dp"
+                android:layout_width="200dp"
+                android:layout_height="180dp"/>
+
+            <Button
+                android:id="@+id/btn_select_images"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Salon Logo/ Photo"
+                android:drawableStart="@drawable/ic_photo_camera_white_24dp"
+                android:drawablePadding="10dp"
+                android:backgroundTint="#808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:text="Post Now"
+                android:backgroundTint="@color/colorAccent"
+                android:id="@+id/btn_post_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include
+        android:visibility="gone"
+        android:id="@+id/llProgressBar"
+        layout="@layout/please_wait" />
+</RelativeLayout>

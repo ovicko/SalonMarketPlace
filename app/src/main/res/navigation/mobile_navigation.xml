@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="Salon"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="mes.cheveux.salon.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_appointment"
+        android:name="mes.cheveux.salon.ui.bookings.BookingFragment"
+        android:label="@string/menu_appointment"
+        tools:layout="@layout/fragment_booking" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="mes.cheveux.salon.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_nav_account_to_commonWebViewFragment"
+            app:destination="@id/commonWebViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nearbySalonsFragment"
+        android:name="mes.cheveux.salon.ui.salon.NearbySalonsFragment"
+        android:label="Nearby Salons"
+        tools:layout="@layout/fragment_nearby_salons" >
+        <action
+            android:id="@+id/action_nearbySalonsFragment_to_salonDetailFragment"
+            app:destination="@id/salonDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salonDetailFragment"
+        android:name="mes.cheveux.salon.ui.salon.SalonDetailFragment"
+        android:label="Salon Details"
+        tools:layout="@layout/fragment_salon_detail" />
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="mes.cheveux.salon.ui.salon.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/commonWebViewFragment"
+        android:name="mes.cheveux.salon.ui.home.CommonWebViewFragment"
+        android:label="@string/app_name" />
+    <fragment
+        android:id="@+id/rateSalonFragment"
+        android:name="mes.cheveux.salon.ui.bookings.RateSalonFragment"
+        android:label="Rate Salon Services"
+        tools:layout="@layout/fragment_rate_salon" />
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="mes.cheveux.salon.ui.bookings.UpcomingFragment"
+        android:label="Upcoming"
+        tools:layout="@layout/fragment_upcoming" >
+        <action
+            android:id="@+id/action_upcomingFragment_to_rateSalonFragment"
+            app:destination="@id/rateSalonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="mes.cheveux.salon.ui.bookings.HistoryFragment"
+        android:label="Booking History"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_rateSalonFragment"
+            app:destination="@id/rateSalonFragment" />
+    </fragment>
+</navigation>

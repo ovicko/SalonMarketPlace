@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E354B</color>
+    <color name="colorPrimaryDark">#1A2D40</color>
+    <color name="colorAccent">#FE7F56</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="statusBarColor">#E64A19</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorFloatActionButton">#FF5722</color>
+    <color name="colorRipple">#FF5722</color>
+    <color name="tabLayoutBackground">#EEEEEE</color>
+    <color name="listViewDivider">#F0F3F5</color>
+    <color name="listViewDivider2">#E1E8ED</color>
+    <color name="postSeparatorLine">#e8f0f5</color>
+    <color name="colorCounterBackground">#34B5E5</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="form_hint_color">#d3d3d3</color>
+</resources>
