@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.reviews;
 
 
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import mes.cheveux.salon.R;
+import mes.cheveux.salon.ui.salon.SalonViewModel;
 
 /**
  * A simple {@link Fragment} subclass.

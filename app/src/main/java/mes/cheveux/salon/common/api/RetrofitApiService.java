@@ -14,7 +14,7 @@ import mes.cheveux.salon.ui.account.data.RegisterFormRequest;
 import mes.cheveux.salon.ui.account.data.UserModel;
 import mes.cheveux.salon.ui.bookings.SalonRatingForm;
 import mes.cheveux.salon.ui.home.ModuleResponse;
-import mes.cheveux.salon.ui.salon.SalonReviewsModel;
+import mes.cheveux.salon.ui.salon.reviews.SalonReviewsModel;
 import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;

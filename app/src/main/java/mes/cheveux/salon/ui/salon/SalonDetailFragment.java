@@ -26,6 +26,7 @@ import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.ui.CommonPagerAdapter;
+import mes.cheveux.salon.ui.salon.reviews.ReviewsFragment;
 import mes.cheveux.salon.ui.salon.services.SalonServicesFragment;
 
 import static androidx.fragment.app.FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT;

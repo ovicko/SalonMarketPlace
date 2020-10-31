@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.reviews;
 
 import android.content.Context;
 import android.view.LayoutInflater;

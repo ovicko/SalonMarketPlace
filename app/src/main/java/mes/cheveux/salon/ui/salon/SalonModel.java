@@ -8,6 +8,8 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+import mes.cheveux.salon.ui.salon.reviews.SalonReviewsModel;
+
 public class SalonModel {
 
     @SerializedName("salon_id")
