@@ -1,6 +1,7 @@
 package mes.cheveux.salon.common.data;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -32,14 +33,14 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
     private LocationRequest locationRequest;
     private Context mContext;
     private SessionManager sessionManager;
+    private static final int LOCATION_PERMISSION_REQUEST_CODE = 4000;
 
+    @SuppressLint("MissingPermission")
     public LocationLiveData(Context context) {
         mContext = context.getApplicationContext();
-
-
         sessionManager = new SessionManager(context);
-
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(context);
+
         locationRequest = LocationRequest.create()
                 .setInterval(10000)
                 .setFastestInterval(5000)
@@ -96,11 +97,12 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
         setValue(locationModel);
     }
 
-
+    @SuppressLint("MissingPermission")
     private void startLocationUpdates() {
         fusedLocationClient.requestLocationUpdates(locationRequest, mLocationCallback, null);
     }
 
+    @SuppressLint("MissingPermission")
     @Override
     protected void onActive() {
         super.onActive();
@@ -116,4 +118,5 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
             fusedLocationClient.removeLocationUpdates(mLocationCallback);
         }
     }
+
 }
