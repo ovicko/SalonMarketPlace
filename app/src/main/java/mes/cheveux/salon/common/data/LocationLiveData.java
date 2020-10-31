@@ -1,11 +1,14 @@
 package mes.cheveux.salon.common.data;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.MutableLiveData;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -25,13 +28,14 @@ import static com.google.android.gms.location.LocationRequest.PRIORITY_HIGH_ACCU
 public class LocationLiveData extends MutableLiveData<LocationModel> {
 
     private FusedLocationProviderClient fusedLocationClient;
-    private static  LocationLiveData instance;
+    private static LocationLiveData instance;
     private LocationRequest locationRequest;
-    private  Context mContext;
+    private Context mContext;
     private SessionManager sessionManager;
 
     public LocationLiveData(Context context) {
-        mContext = context;
+        mContext = context.getApplicationContext();
+
 
         sessionManager = new SessionManager(context);
 
@@ -41,7 +45,7 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
                 .setFastestInterval(5000)
                 .setPriority(PRIORITY_HIGH_ACCURACY);
         fusedLocationClient.getLastLocation().addOnCompleteListener(task -> {
-            if(task.isSuccessful() && task.getResult() != null) {
+            if (task.isSuccessful() && task.getResult() != null) {
                 setLocationData(task.getResult());
             } else {
                 fusedLocationClient.requestLocationUpdates(locationRequest, mLocationCallback, null);
@@ -49,11 +53,11 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
         });
     }
 
-    private LocationCallback mLocationCallback = new LocationCallback(){
+    private LocationCallback mLocationCallback = new LocationCallback() {
         @Override
         public void onLocationResult(LocationResult locationResult) {
             for (Location location : locationResult.getLocations()) {
-                if (location != null){
+                if (location != null) {
                     setLocationData(location);
                 }
 
@@ -61,7 +65,7 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
         }
     };
 
-    private void setLocationData(Location location){
+    private void setLocationData(Location location) {
         LocationModel locationModel = new LocationModel();
         if (location != null) {
             locationModel.setLatitude(location.getLatitude());
@@ -69,8 +73,8 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
             Geocoder geocoder = new Geocoder(mContext);
             try {
                 List<Address> addressList = geocoder
-                        .getFromLocation(location.getLatitude(),location.getLongitude(),1);
-                if (addressList != null && addressList.size()>=1) {
+                        .getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+                if (addressList != null && addressList.size() >= 1) {
                     locationModel.setPlaceName(addressList.get(0).getLocality());
                 } else {
                     locationModel.setPlaceName("No location data");
@@ -87,15 +91,14 @@ public class LocationLiveData extends MutableLiveData<LocationModel> {
 
 
         sessionManager.saveLastLocation(
-                locationModel.getLatitude(),locationModel.getLongitude(),locationModel.getPlaceName());
+                locationModel.getLatitude(), locationModel.getLongitude(), locationModel.getPlaceName());
 
         setValue(locationModel);
     }
 
 
-
-    private void startLocationUpdates(){
-        fusedLocationClient.requestLocationUpdates(locationRequest,mLocationCallback,null);
+    private void startLocationUpdates() {
+        fusedLocationClient.requestLocationUpdates(locationRequest, mLocationCallback, null);
     }
 
     @Override
