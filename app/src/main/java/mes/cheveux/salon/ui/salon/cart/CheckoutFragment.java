@@ -1,8 +1,6 @@
 package mes.cheveux.salon.ui.salon.cart;
 
 
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -15,9 +13,7 @@ import android.view.ViewGroup;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
-import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.data.booking.BookingForm;
-import mes.cheveux.salon.ui.salon.SalonCartBroadCastReceiver;
 import sqip.CardEntry;
 
 public class CheckoutFragment extends Fragment {

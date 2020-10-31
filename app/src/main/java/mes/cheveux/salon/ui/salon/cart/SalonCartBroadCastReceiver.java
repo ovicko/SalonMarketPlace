@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.cart;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
