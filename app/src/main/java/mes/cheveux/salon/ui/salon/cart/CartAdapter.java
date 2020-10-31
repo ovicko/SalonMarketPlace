@@ -1,36 +1,31 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.cart;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
-import androidx.cardview.widget.CardView;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import mes.cheveux.salon.R;
-import mes.cheveux.salon.common.HelperMethods;
+import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
+import mes.cheveux.salon.ui.salon.SalonViewModel;
 
-public class SalonServiceAdapter extends RecyclerView.Adapter<SalonServiceAdapter.SalonViewHolder>  {
-    private Context mContext;
-    private List<SalonServiceModel> salonServiceModelList;
-    private SalonViewModel salonViewModel;
-    private List<SalonServiceModel> cartList;
+public class CartAdapter extends RecyclerView.Adapter<CartAdapter.SalonViewHolder>  {
+    Context mContext;
+    List<SalonServiceModel> salonServiceModelList;
+    SalonViewModel salonViewModel;
+    List<SalonServiceModel> cartList;
 
-    public SalonServiceAdapter(Context mContext,
-                               List<SalonServiceModel> salonModelList,
-                               SalonViewModel viewModel) {
+    public CartAdapter(Context mContext,
+                       List<SalonServiceModel> salonModelList,
+                       SalonViewModel viewModel) {
         this.mContext = mContext;
         this.salonServiceModelList = salonModelList;
         this.salonViewModel = viewModel;
@@ -42,7 +37,7 @@ public class SalonServiceAdapter extends RecyclerView.Adapter<SalonServiceAdapte
     public SalonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new SalonViewHolder(LayoutInflater
                 .from(mContext)
-                .inflate(R.layout.salon_service_item, parent, false));
+                .inflate(R.layout.cart_item, parent, false));
     }
 
     @Override
@@ -53,16 +48,14 @@ public class SalonServiceAdapter extends RecyclerView.Adapter<SalonServiceAdapte
 
         holder.addToCartBtn.setOnClickListener(view->{
             cartList.add(serviceModel);
-            salonViewModel.servicesAddedToCartLiveData.postValue(cartList);
+            salonViewModel.servicesAddedToCartLiveData.setValue(cartList);
             holder.addToCartBtn.setVisibility(View.GONE);
             holder.removeToCartBtn.setVisibility(View.VISIBLE);
         });
 
         holder.removeToCartBtn.setOnClickListener(view->{
-
-           // salonViewModel.servicesAddedToCartLiveData.getValue().remove(serviceModel);
             cartList.remove(serviceModel);
-            salonViewModel.servicesAddedToCartLiveData.postValue(cartList);
+            salonViewModel.servicesAddedToCartLiveData.setValue(cartList);
             holder.removeToCartBtn.setVisibility(View.GONE);
             holder.addToCartBtn.setVisibility(View.VISIBLE);
         });

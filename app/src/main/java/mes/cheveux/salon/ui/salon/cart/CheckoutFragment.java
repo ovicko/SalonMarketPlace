@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.cart;
 
 
 import android.content.Intent;
@@ -17,6 +17,7 @@ import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.data.booking.BookingForm;
+import mes.cheveux.salon.ui.salon.SalonCartBroadCastReceiver;
 import sqip.CardEntry;
 
 public class CheckoutFragment extends Fragment {

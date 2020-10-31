@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.services;
 
 
 import android.content.Intent;
@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,6 +27,7 @@ import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.data.booking.BookingForm;
 import mes.cheveux.salon.ui.bookings.CheckoutActivity;
+import mes.cheveux.salon.ui.salon.SalonViewModel;
 
 import static mes.cheveux.salon.common.HelperMethods.formatCurrency;
 

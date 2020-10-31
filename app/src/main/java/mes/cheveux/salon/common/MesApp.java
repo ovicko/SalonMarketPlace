@@ -7,14 +7,10 @@ import android.util.Log;
 
 import androidx.multidex.MultiDex;
 
-import mes.cheveux.salon.common.api.RetrofitClient;
 import mes.cheveux.salon.common.data.ChargeCall;
 import mes.cheveux.salon.common.data.NetworkLiveData;
 import mes.cheveux.salon.common.data.SessionManager;
 import mes.cheveux.salon.data.booking.BookingForm;
-import mes.cheveux.salon.ui.salon.CardEntryBackgroundHandler;
-import retrofit2.Retrofit;
-import sqip.CardEntry;
 
 public class MesApp extends Application {
     public static final String TAG = MesApp.class.getSimpleName();

@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.services;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,16 +14,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mes.cheveux.salon.R;
+import mes.cheveux.salon.ui.salon.SalonViewModel;
 
-public class CartAdapter extends RecyclerView.Adapter<CartAdapter.SalonViewHolder>  {
-    Context mContext;
-    List<SalonServiceModel> salonServiceModelList;
-    SalonViewModel salonViewModel;
-    List<SalonServiceModel> cartList;
+public class SalonServiceAdapter extends RecyclerView.Adapter<SalonServiceAdapter.SalonViewHolder>  {
+    private Context mContext;
+    private List<SalonServiceModel> salonServiceModelList;
+    private SalonViewModel salonViewModel;
+    private List<SalonServiceModel> cartList;
 
-    public CartAdapter(Context mContext,
-                       List<SalonServiceModel> salonModelList,
-                       SalonViewModel viewModel) {
+    public SalonServiceAdapter(Context mContext,
+                               List<SalonServiceModel> salonModelList,
+                               SalonViewModel viewModel) {
         this.mContext = mContext;
         this.salonServiceModelList = salonModelList;
         this.salonViewModel = viewModel;
@@ -35,7 +36,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.SalonViewHolde
     public SalonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new SalonViewHolder(LayoutInflater
                 .from(mContext)
-                .inflate(R.layout.cart_item, parent, false));
+                .inflate(R.layout.salon_service_item, parent, false));
     }
 
     @Override
@@ -46,14 +47,16 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.SalonViewHolde
 
         holder.addToCartBtn.setOnClickListener(view->{
             cartList.add(serviceModel);
-            salonViewModel.servicesAddedToCartLiveData.setValue(cartList);
+            salonViewModel.servicesAddedToCartLiveData.postValue(cartList);
             holder.addToCartBtn.setVisibility(View.GONE);
             holder.removeToCartBtn.setVisibility(View.VISIBLE);
         });
 
         holder.removeToCartBtn.setOnClickListener(view->{
+
+           // salonViewModel.servicesAddedToCartLiveData.getValue().remove(serviceModel);
             cartList.remove(serviceModel);
-            salonViewModel.servicesAddedToCartLiveData.setValue(cartList);
+            salonViewModel.servicesAddedToCartLiveData.postValue(cartList);
             holder.removeToCartBtn.setVisibility(View.GONE);
             holder.addToCartBtn.setVisibility(View.VISIBLE);
         });

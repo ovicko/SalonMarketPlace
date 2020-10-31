@@ -7,7 +7,6 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.LivePagedListBuilder;
-import androidx.paging.PageKeyedDataSource;
 import androidx.paging.PagedList;
 
 import java.util.List;
@@ -19,6 +18,7 @@ import mes.cheveux.salon.common.data.LocationModel;
 import mes.cheveux.salon.common.data.SalonSearchModel;
 import mes.cheveux.salon.common.data.SessionManager;
 import mes.cheveux.salon.data.SalonRepository;
+import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 
 public class SalonViewModel extends AndroidViewModel {
 

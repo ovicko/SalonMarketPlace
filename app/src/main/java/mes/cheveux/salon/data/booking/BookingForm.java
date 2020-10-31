@@ -2,8 +2,7 @@ package mes.cheveux.salon.data.booking;
 
 import java.util.List;
 
-import mes.cheveux.salon.common.data.BaseForm;
-import mes.cheveux.salon.ui.salon.SalonServiceModel;
+import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 
 public class BookingForm  {
     private int salonId,customerId;

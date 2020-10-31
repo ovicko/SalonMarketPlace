@@ -8,11 +8,9 @@ import java.util.List;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
-import mes.cheveux.salon.common.Constants;
 import mes.cheveux.salon.common.data.BaseRepository;
 import mes.cheveux.salon.common.data.MessageResponse;
 import mes.cheveux.salon.ui.bookings.SalonRatingForm;
-import mes.cheveux.salon.ui.salon.SalonServiceModel;
 
 public class BookingRepository extends BaseRepository {
     private  static BookingRepository bookingRepository;
