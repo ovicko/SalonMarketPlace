@@ -7,17 +7,12 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -39,7 +34,6 @@ import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.common.data.GpsUtils;
 import mes.cheveux.salon.ui.account.AccountActivity;
 import mes.cheveux.salon.ui.home.HomeViewModel;
-import mes.cheveux.salon.ui.salon.MapsActivity;
 
 public class MainActivity extends AppCompatActivity {
 

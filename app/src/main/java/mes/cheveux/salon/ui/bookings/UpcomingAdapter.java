@@ -2,7 +2,6 @@ package mes.cheveux.salon.ui.bookings;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,14 +10,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.data.booking.BookingModel;
-import mes.cheveux.salon.ui.salon.SimpleDeirectionActivity;
+import mes.cheveux.salon.ui.salon.direction.SimpleDeirectionActivity;
 
 public class UpcomingAdapter  extends RecyclerView.Adapter<UpcomingAdapter.UpcomingViewHolder>{
     Context context;

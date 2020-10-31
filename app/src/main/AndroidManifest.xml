@@ -29,7 +29,7 @@
             android:value="sandbox-sq0idb-JBqQQhccdhbt5Clb8CyaYA" />
 
         <activity
-            android:name=".ui.salon.SimpleDeirectionActivity"
+            android:name=".ui.salon.direction.SimpleDeirectionActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".MainActivity" />
 
@@ -38,7 +38,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ui.salon.MapsActivity"
+            android:name=".ui.salon.direction.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
             android:name=".ui.account.AccountActivity"

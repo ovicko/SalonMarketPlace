@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.ui.salon.direction;
 
 import androidx.fragment.app.FragmentActivity;
 

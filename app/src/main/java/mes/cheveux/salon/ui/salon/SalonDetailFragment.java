@@ -26,6 +26,7 @@ import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.ui.CommonPagerAdapter;
+import mes.cheveux.salon.ui.salon.direction.SimpleDeirectionActivity;
 import mes.cheveux.salon.ui.salon.reviews.ReviewsFragment;
 import mes.cheveux.salon.ui.salon.services.SalonServicesFragment;
 
@@ -109,7 +110,7 @@ public class SalonDetailFragment extends Fragment {
     }
 
     private void showDirection() {
-        Intent mapIntent = new Intent(getActivity(),SimpleDeirectionActivity.class);
+        Intent mapIntent = new Intent(getActivity(), SimpleDeirectionActivity.class);
         mapIntent.putExtra("LATITUDE",salonDetails.getLatitude());
         mapIntent.putExtra("LONGITUDE",salonDetails.getLongitude());
         mapIntent.putExtra("SALON_NAME",salonDetails.getName());
