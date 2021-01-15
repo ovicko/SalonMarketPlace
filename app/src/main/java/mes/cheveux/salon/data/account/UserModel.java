@@ -2,7 +2,7 @@
  * Copyright (c) 2019. AMWOLLO VICTOR <https://ovicko.com>
  */
 
-package mes.cheveux.salon.ui.account.data;
+package mes.cheveux.salon.data.account;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

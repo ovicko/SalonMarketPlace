@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.account;
+package mes.cheveux.salon.data.account;
 
 import android.app.Application;
 

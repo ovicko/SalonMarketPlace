@@ -2,7 +2,7 @@
  * Copyright (c) 2019. AMWOLLO VICTOR <https://ovicko.com>
  */
 
-package mes.cheveux.salon.ui.account.data;
+package mes.cheveux.salon.data.account;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
