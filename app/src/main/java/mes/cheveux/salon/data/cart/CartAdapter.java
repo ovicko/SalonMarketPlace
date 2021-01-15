@@ -14,8 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mes.cheveux.salon.R;
-import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
-import mes.cheveux.salon.ui.salon.SalonViewModel;
+import mes.cheveux.salon.data.salon.SalonServiceModel;
+import mes.cheveux.salon.data.salon.SalonViewModel;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.SalonViewHolder>  {
     Context mContext;

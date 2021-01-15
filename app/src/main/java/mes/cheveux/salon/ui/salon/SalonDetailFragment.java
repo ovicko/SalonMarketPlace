@@ -25,6 +25,8 @@ import com.squareup.picasso.Picasso;
 import me.zhanghai.android.materialratingbar.MaterialRatingBar;
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
+import mes.cheveux.salon.data.salon.SalonModel;
+import mes.cheveux.salon.data.salon.SalonViewModel;
 import mes.cheveux.salon.ui.CommonPagerAdapter;
 import mes.cheveux.salon.ui.salon.direction.SimpleDeirectionActivity;
 import mes.cheveux.salon.ui.salon.reviews.ReviewsFragment;

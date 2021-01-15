@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import mes.cheveux.salon.R;
-import mes.cheveux.salon.ui.salon.SalonViewModel;
+import mes.cheveux.salon.data.salon.SalonViewModel;
 
 /**
  * A simple {@link Fragment} subclass.

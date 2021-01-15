@@ -16,14 +16,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
-
 import mes.cheveux.salon.MainActivity;
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.Constants;
-import mes.cheveux.salon.ui.account.data.LoginFormRequest;
-import mes.cheveux.salon.ui.account.data.RegisterFormRequest;
-import mes.cheveux.salon.ui.account.data.UserViewModel;
+import mes.cheveux.salon.data.account.RegisterFormRequest;
+import mes.cheveux.salon.data.account.UserViewModel;
 
 /**
  * A simple {@link Fragment} subclass.

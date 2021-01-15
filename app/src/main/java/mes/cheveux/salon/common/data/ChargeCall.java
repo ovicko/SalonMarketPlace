@@ -11,7 +11,7 @@ import java.lang.reflect.Type;
 import mes.cheveux.salon.BuildConfig;
 import mes.cheveux.salon.common.api.RetrofitApiService;
 import mes.cheveux.salon.data.booking.BookingForm;
-import mes.cheveux.salon.ui.salon.cart.ChargeResult;
+import mes.cheveux.salon.data.cart.ChargeResult;
 import okhttp3.ResponseBody;
 import retrofit2.Callback;
 import retrofit2.Converter;

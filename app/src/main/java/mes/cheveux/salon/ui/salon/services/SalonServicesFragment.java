@@ -26,8 +26,9 @@ import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.data.booking.BookingForm;
+import mes.cheveux.salon.data.salon.SalonServiceModel;
 import mes.cheveux.salon.ui.bookings.CheckoutActivity;
-import mes.cheveux.salon.ui.salon.SalonViewModel;
+import mes.cheveux.salon.data.salon.SalonViewModel;
 
 import static mes.cheveux.salon.common.HelperMethods.formatCurrency;
 

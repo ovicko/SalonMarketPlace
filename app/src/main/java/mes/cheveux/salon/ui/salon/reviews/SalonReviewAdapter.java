@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import mes.cheveux.salon.R;
+import mes.cheveux.salon.data.salon.SalonReviewsModel;
 
 public class SalonReviewAdapter extends RecyclerView.Adapter<SalonReviewAdapter.ReviewViewHolder>  {
     private Context mContext;

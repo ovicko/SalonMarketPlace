@@ -12,18 +12,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.Constants;
-import mes.cheveux.salon.common.HelperMethods;
-import mes.cheveux.salon.ui.account.data.UserModel;
-import mes.cheveux.salon.ui.settings.SettingsViewModel;
+import mes.cheveux.salon.data.account.UserModel;
+import mes.cheveux.salon.data.salon.SettingsViewModel;
 
 public class AccountFragment extends Fragment {
 

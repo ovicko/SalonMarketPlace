@@ -9,17 +9,17 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.data.SalonSearchModel;
+import mes.cheveux.salon.data.salon.SalonModel;
+import mes.cheveux.salon.data.salon.SalonViewModel;
 
 public class NearbySalonsFragment extends Fragment {
 

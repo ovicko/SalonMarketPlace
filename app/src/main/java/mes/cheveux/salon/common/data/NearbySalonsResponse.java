@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import mes.cheveux.salon.ui.salon.SalonModel;
+import mes.cheveux.salon.data.salon.SalonModel;
 
 public class NearbySalonsResponse {
 

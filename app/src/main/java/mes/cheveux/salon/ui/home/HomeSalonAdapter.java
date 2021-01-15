@@ -20,7 +20,7 @@ import java.util.List;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
-import mes.cheveux.salon.ui.salon.SalonModel;
+import mes.cheveux.salon.data.salon.SalonModel;
 
 public class HomeSalonAdapter extends RecyclerView.Adapter<HomeSalonAdapter.SalonViewHolder>  {
     Context mContext;

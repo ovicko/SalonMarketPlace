@@ -6,13 +6,11 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import mes.cheveux.salon.common.data.MessageResponse;
 import mes.cheveux.salon.common.data.SessionManager;
-import mes.cheveux.salon.ui.account.data.LoginFormRequest;
-import mes.cheveux.salon.ui.account.data.UserModel;
-import mes.cheveux.salon.ui.account.data.UserRepository;
+import mes.cheveux.salon.data.account.UserModel;
+import mes.cheveux.salon.data.account.UserRepository;
 
 public class SettingsViewModel extends AndroidViewModel {
 

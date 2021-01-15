@@ -6,13 +6,12 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import mes.cheveux.salon.common.data.LocationLiveData;
 import mes.cheveux.salon.common.data.LocationModel;
 import mes.cheveux.salon.common.data.SessionManager;
-import mes.cheveux.salon.data.SalonRepository;
-import mes.cheveux.salon.ui.account.data.UserRepository;
+import mes.cheveux.salon.data.salon.SalonRepository;
+import mes.cheveux.salon.data.account.UserRepository;
 
 public class HomeViewModel extends AndroidViewModel {
     private LiveData<LocationModel> locationModelLiveData;

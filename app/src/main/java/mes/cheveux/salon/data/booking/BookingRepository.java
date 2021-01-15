@@ -15,8 +15,6 @@ import mes.cheveux.salon.ui.bookings.SalonRatingForm;
 public class BookingRepository extends BaseRepository {
     private  static BookingRepository bookingRepository;
 
-
-
     public  static BookingRepository getInstance(){
         if (bookingRepository == null) {
             bookingRepository = new BookingRepository();
@@ -47,10 +45,8 @@ public class BookingRepository extends BaseRepository {
         return response;
     }
 
-
     @SuppressLint("CheckResult")
     public MutableLiveData<MessageResponse> rateSalon(SalonRatingForm ratingForm){
-
         apiService.rateSalon(ratingForm)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

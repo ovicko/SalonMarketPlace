@@ -13,7 +13,6 @@ import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.common.api.RetrofitApiService;
 import mes.cheveux.salon.common.api.RetrofitClient;
 
-
 public class BaseRepository {
     public RetrofitApiService apiService;
     public Context context;

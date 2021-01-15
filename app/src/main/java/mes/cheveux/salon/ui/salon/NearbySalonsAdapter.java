@@ -13,8 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.navigation.Navigation;
 import androidx.paging.PagedListAdapter;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
@@ -23,7 +21,7 @@ import java.util.List;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.HelperMethods;
-import mes.cheveux.salon.ui.home.HomeSalonAdapter;
+import mes.cheveux.salon.data.salon.SalonModel;
 
 public class NearbySalonsAdapter extends PagedListAdapter<SalonModel,NearbySalonsAdapter.SalonViewHolder> {
     private Context context;

@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +15,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import mes.cheveux.salon.R;
-import mes.cheveux.salon.common.HelperMethods;
-import mes.cheveux.salon.ui.salon.SalonModel;
-import mes.cheveux.salon.ui.salon.SalonViewModel;
 
 /**
  * A simple {@link Fragment} subclass.

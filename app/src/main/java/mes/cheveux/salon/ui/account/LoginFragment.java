@@ -20,8 +20,8 @@ import com.google.android.material.textfield.TextInputEditText;
 import mes.cheveux.salon.MainActivity;
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.Constants;
-import mes.cheveux.salon.ui.account.data.LoginFormRequest;
-import mes.cheveux.salon.ui.account.data.UserViewModel;
+import mes.cheveux.salon.data.account.LoginFormRequest;
+import mes.cheveux.salon.data.account.UserViewModel;
 
 /**
  * A simple {@link Fragment} subclass.

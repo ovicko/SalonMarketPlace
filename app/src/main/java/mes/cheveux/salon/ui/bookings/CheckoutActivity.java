@@ -16,10 +16,10 @@ import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.common.api.RetrofitClient;
 import mes.cheveux.salon.common.data.ChargeCall;
 import mes.cheveux.salon.data.booking.BookingForm;
-import mes.cheveux.salon.ui.salon.cart.CardEntryBackgroundHandler;
-import mes.cheveux.salon.ui.salon.cart.CartAdapter;
-import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
-import mes.cheveux.salon.ui.salon.SalonViewModel;
+import mes.cheveux.salon.data.cart.CardEntryBackgroundHandler;
+import mes.cheveux.salon.data.cart.CartAdapter;
+import mes.cheveux.salon.data.salon.SalonServiceModel;
+import mes.cheveux.salon.data.salon.SalonViewModel;
 import retrofit2.Retrofit;
 import sqip.CardEntry;
 

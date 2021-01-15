@@ -44,7 +44,7 @@
         tools:layout="@layout/fragment_salon_detail" />
     <fragment
         android:id="@+id/checkoutFragment"
-        android:name="mes.cheveux.salon.ui.salon.cart.CheckoutFragment"
+        android:name="mes.cheveux.salon.data.cart.CheckoutFragment"
         android:label="fragment_checkout"
         tools:layout="@layout/fragment_checkout" />
     <fragment
