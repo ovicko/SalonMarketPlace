@@ -1,8 +1,7 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.data.salon;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.DataSource;
-import androidx.paging.PageKeyedDataSource;
 
 import mes.cheveux.salon.common.data.SalonSearchModel;
 

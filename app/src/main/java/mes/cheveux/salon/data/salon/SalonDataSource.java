@@ -1,7 +1,6 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.data.salon;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.paging.PageKeyedDataSource;
@@ -15,7 +14,6 @@ import mes.cheveux.salon.common.api.RetrofitClient;
 import mes.cheveux.salon.common.data.MetaModel;
 import mes.cheveux.salon.common.data.NearbySalonsResponse;
 import mes.cheveux.salon.common.data.SalonSearchModel;
-import mes.cheveux.salon.common.data.SessionManager;
 
 public class SalonDataSource extends PageKeyedDataSource<Integer, SalonModel> {
     public RetrofitApiService apiService;

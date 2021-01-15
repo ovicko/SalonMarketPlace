@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.data.salon;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;

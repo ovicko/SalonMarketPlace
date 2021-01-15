@@ -1,4 +1,4 @@
-package mes.cheveux.salon.data;
+package mes.cheveux.salon.data.salon;
 
 import android.annotation.SuppressLint;
 
@@ -16,16 +16,12 @@ import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 public class SalonRepository extends BaseRepository {
     private  static SalonRepository salonRepository;
 
-
     public  static SalonRepository getInstance(){
         if (salonRepository == null) {
             salonRepository = new SalonRepository();
         }
-
         return salonRepository;
     }
-
-
 
     @SuppressLint("CheckResult")
     public MutableLiveData<ModuleResponse> getHomeModules(){

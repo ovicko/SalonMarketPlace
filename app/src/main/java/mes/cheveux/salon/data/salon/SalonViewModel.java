@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.data.salon;
 
 import android.app.Application;
 
@@ -17,7 +17,6 @@ import mes.cheveux.salon.common.data.LocationLiveData;
 import mes.cheveux.salon.common.data.LocationModel;
 import mes.cheveux.salon.common.data.SalonSearchModel;
 import mes.cheveux.salon.common.data.SessionManager;
-import mes.cheveux.salon.data.SalonRepository;
 import mes.cheveux.salon.ui.salon.reviews.SalonReviewsModel;
 import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 

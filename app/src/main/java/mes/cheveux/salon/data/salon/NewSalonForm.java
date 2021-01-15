@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon;
+package mes.cheveux.salon.data.salon;
 
 public class NewSalonForm {
     private String name,phone,address,website,place_id,state,city,country;
