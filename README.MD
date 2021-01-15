@@ -4,7 +4,7 @@ Salon owners have a web interface through which they manage their salon details,
 bookings.
 
 # Features
-Customers can:
+*Customers can:*
 - signup,login,view and edit profile
 - curated lists of salons like Editors pick, Sponsored and Latest Salons.
 - view salon details (name, location,services offered and their prices, telephone etc)
@@ -16,7 +16,7 @@ Customers can:
 - rate your salon experience
 - view content pages like T&C,help pages and about
 - contact the platform admin via contact form
-
+ [*Screenshots*](/screenshots)
 # Future Plans
 - Add different payment methods
 - Refactor code to look better
