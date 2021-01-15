@@ -1,9 +1,9 @@
-#About
+# About
 This is a client app for a Salon Marketplace App.
 Salon owners have a web interface through which they manage their salon details,services and
 bookings.
 
-#Features
+# Features
 Customers can:
 - signup,login,view and edit profile
 - curated lists of salons like Editors pick, Sponsored and Latest Salons.
@@ -17,8 +17,12 @@ Customers can:
 - view content pages like T&C,help pages and about
 - contact the platform admin via contact form
 
-#Future Plans
+# Future Plans
 - Add different payment methods
 - Refactor code to look better
 - improve user interface
+
+# Tech Stack
+- Client server: Yii2 PHP Framework,MySQL
+- Client app: Android,Java,...
 
