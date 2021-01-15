@@ -32,7 +32,7 @@ import java.util.ArrayList;
 
 import mes.cheveux.salon.R;
 
-public class SimpleDeirectionActivity extends AppCompatActivity implements OnMapReadyCallback {
+public class DirectionActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private LatLng origin,destination;
@@ -76,7 +76,7 @@ public class SimpleDeirectionActivity extends AppCompatActivity implements OnMap
                 SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                         .findFragmentById(R.id.maps);
                 assert mapFragment != null;
-                mapFragment.getMapAsync(SimpleDeirectionActivity.this);
+                mapFragment.getMapAsync(DirectionActivity.this);
             }
         });
     }
@@ -101,11 +101,11 @@ public class SimpleDeirectionActivity extends AppCompatActivity implements OnMap
                             mMap.addMarker(new MarkerOptions().position(destination).title(SALON_NAME));
 
                             ArrayList<LatLng> directionPositionList = route.getLegList().get(0).getDirectionPoint();
-                            mMap.addPolyline(DirectionConverter.createPolyline(SimpleDeirectionActivity.this,
+                            mMap.addPolyline(DirectionConverter.createPolyline(DirectionActivity.this,
                                     directionPositionList,5, Color.BLUE));
                             setCameraWithCoordinationBounds(route);
                         } else {
-                            Toast.makeText(SimpleDeirectionActivity.this,
+                            Toast.makeText(DirectionActivity.this,
                                     direction.getErrorMessage(), Toast.LENGTH_LONG).show();
                         }
                     }
@@ -113,7 +113,7 @@ public class SimpleDeirectionActivity extends AppCompatActivity implements OnMap
                     @Override
                     public void onDirectionFailure(Throwable t) {
                         t.printStackTrace();
-                        Toast.makeText(SimpleDeirectionActivity.this,
+                        Toast.makeText(DirectionActivity.this,
                                 t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
