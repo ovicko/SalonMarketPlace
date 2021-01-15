@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.bookings;
+package mes.cheveux.salon.data.booking;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -6,8 +6,6 @@ import androidx.lifecycle.ViewModel;
 import java.util.List;
 
 import mes.cheveux.salon.common.data.MessageResponse;
-import mes.cheveux.salon.data.booking.BookingModel;
-import mes.cheveux.salon.data.booking.BookingRepository;
 
 public class BookingViewModel extends ViewModel {
 

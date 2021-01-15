@@ -21,6 +21,8 @@ import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.Constants;
 import mes.cheveux.salon.common.HelperMethods;
 import mes.cheveux.salon.data.booking.BookingModel;
+import mes.cheveux.salon.data.booking.BookingViewModel;
+import mes.cheveux.salon.data.booking.SalonRatingForm;
 
 /**
  * A simple {@link Fragment} subclass.

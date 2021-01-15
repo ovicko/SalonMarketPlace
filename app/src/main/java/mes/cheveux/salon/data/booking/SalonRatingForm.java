@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.bookings;
+package mes.cheveux.salon.data.booking;
 
 public class SalonRatingForm {
     private String customerId,bookingId, rating, comment, salonId;

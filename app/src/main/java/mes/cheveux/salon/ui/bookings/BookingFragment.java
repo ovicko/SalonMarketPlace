@@ -13,6 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 
 import mes.cheveux.salon.R;
+import mes.cheveux.salon.data.booking.BookingViewModel;
 import mes.cheveux.salon.ui.CommonPagerAdapter;
 
 import static androidx.fragment.app.FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT;

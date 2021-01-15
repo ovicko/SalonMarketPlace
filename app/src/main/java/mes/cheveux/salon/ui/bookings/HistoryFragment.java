@@ -20,6 +20,7 @@ import java.util.List;
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.common.MesApp;
 import mes.cheveux.salon.data.booking.BookingModel;
+import mes.cheveux.salon.data.booking.BookingViewModel;
 
 /**
  * A simple {@link Fragment} subclass.
