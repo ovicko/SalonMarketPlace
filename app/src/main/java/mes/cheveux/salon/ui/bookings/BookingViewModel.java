@@ -25,7 +25,7 @@ public class BookingViewModel extends ViewModel {
         return bookingRepository.customerBookingHistory(customerId);
     }
 
-    MutableLiveData<MessageResponse> rateSalon(SalonRatingForm ratingForm){
+    public MutableLiveData<MessageResponse> rateSalon(SalonRatingForm ratingForm){
         return bookingRepository.rateSalon(ratingForm);
     }
 }
