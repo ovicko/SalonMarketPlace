@@ -5,12 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.salon.direction.SimpleDeirectionActivity">
+    tools:context=".ui.salon.direction.DirectionActivity">
     <fragment
         android:id="@+id/maps"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.salon.direction.SimpleDeirectionActivity" />
+        tools:context=".ui.salon.direction.DirectionActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

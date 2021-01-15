@@ -16,7 +16,7 @@ import java.util.List;
 
 import mes.cheveux.salon.R;
 import mes.cheveux.salon.data.booking.BookingModel;
-import mes.cheveux.salon.ui.salon.direction.SimpleDeirectionActivity;
+import mes.cheveux.salon.ui.salon.direction.DirectionActivity;
 
 public class UpcomingAdapter  extends RecyclerView.Adapter<UpcomingAdapter.UpcomingViewHolder>{
     Context context;
@@ -44,7 +44,7 @@ public class UpcomingAdapter  extends RecyclerView.Adapter<UpcomingAdapter.Upcom
         holder.salonAddressView.setText(bookingModel.getSalonAddress());
 
         holder.direction.setOnClickListener(view->{
-            Intent mapIntent = new Intent(context, SimpleDeirectionActivity.class);
+            Intent mapIntent = new Intent(context, DirectionActivity.class);
             mapIntent.putExtra("LATITUDE",bookingModel.getLatitude());
             mapIntent.putExtra("LONGITUDE",bookingModel.getLongitude());
             mapIntent.putExtra("SALON_NAME",bookingModel.getSalonName());

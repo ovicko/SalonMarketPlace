@@ -29,7 +29,7 @@
             android:value="sandbox-sq0idb-JBqQQhccdhbt5Clb8CyaYA" />
 
         <activity
-            android:name=".ui.salon.direction.SimpleDeirectionActivity"
+            android:name=".ui.salon.direction.DirectionActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:parentActivityName=".MainActivity" />
 

@@ -12,7 +12,7 @@ import mes.cheveux.salon.data.booking.BookingModel;
 import mes.cheveux.salon.data.account.LoginFormRequest;
 import mes.cheveux.salon.data.account.RegisterFormRequest;
 import mes.cheveux.salon.data.account.UserModel;
-import mes.cheveux.salon.ui.bookings.SalonRatingForm;
+import mes.cheveux.salon.data.booking.SalonRatingForm;
 import mes.cheveux.salon.ui.home.ModuleResponse;
 import mes.cheveux.salon.data.salon.SalonReviewsModel;
 import mes.cheveux.salon.data.salon.SalonServiceModel;
