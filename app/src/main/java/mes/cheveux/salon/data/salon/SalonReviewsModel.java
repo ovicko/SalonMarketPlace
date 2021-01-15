@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon.reviews;
+package mes.cheveux.salon.data.salon;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

@@ -10,8 +10,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 import mes.cheveux.salon.common.data.BaseRepository;
 import mes.cheveux.salon.ui.home.ModuleResponse;
-import mes.cheveux.salon.ui.salon.reviews.SalonReviewsModel;
-import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 
 public class SalonRepository extends BaseRepository {
     private  static SalonRepository salonRepository;

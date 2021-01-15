@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.settings;
+package mes.cheveux.salon.data.salon;
 
 import android.app.Application;
 

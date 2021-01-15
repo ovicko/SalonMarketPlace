@@ -17,8 +17,6 @@ import mes.cheveux.salon.common.data.LocationLiveData;
 import mes.cheveux.salon.common.data.LocationModel;
 import mes.cheveux.salon.common.data.SalonSearchModel;
 import mes.cheveux.salon.common.data.SessionManager;
-import mes.cheveux.salon.ui.salon.reviews.SalonReviewsModel;
-import mes.cheveux.salon.ui.salon.services.SalonServiceModel;
 
 public class SalonViewModel extends AndroidViewModel {
 
