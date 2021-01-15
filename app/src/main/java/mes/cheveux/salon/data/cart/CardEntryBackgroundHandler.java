@@ -1,4 +1,4 @@
-package mes.cheveux.salon.ui.salon.cart;
+package mes.cheveux.salon.data.cart;
 
 
 import android.content.res.Resources;
